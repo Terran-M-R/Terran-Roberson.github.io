@@ -22,6 +22,7 @@ body {
   color: #ffffff;
 }
 
+/* This Section makes the website title and social media links in the middle of the page and offset 300 pixels */
 .websitetitle {
   display: flex;
   flex-direction: column;
@@ -45,6 +46,7 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
+/* These are the general settings for the header. The position allows it to remain at the top while one scrolls down each page */
 header {
   position: sticky;
   top: 0;
@@ -55,6 +57,8 @@ header {
   z-index: 100;
 }
 
+/* The navigation is part of the header. It is the word links to the other pages. Hover changes the way it looks when a mouse is over it. Active shows when 
+a the user is currently on the page. Ex: One the hompeage, the Home link is in bold. On HTML, I need to put class = active on each that is actually active. */
 nav a {
   margin: 0 15px;
   text-decoration: none;
@@ -81,6 +85,9 @@ av a.active {
 } 
 */
 
+/* The social links are underneath the website title. They are worded buttons to different social media platforms. When someone hovers over the links
+the buttons move down 3 pixels and darken to let userers know they are clicking them. There is also a transition, it gets visibly darker as you hover*/
+
 .social-links {
   display: flex;
   gap: 20px;
@@ -105,8 +112,10 @@ av a.active {
   color: #ffffff;
 }
 
+/* This section is the space between the rest of the page and the footer */
+
 section {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 footer {
