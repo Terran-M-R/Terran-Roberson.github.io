@@ -55,14 +55,16 @@ nav a {
   color: #ffffff;
 }
 
-main {
+/* I have temporairly turned this into a comment so its not on the main page, you can get rid of the comment by deleting the "/*"
+  main {
   flex: 1;
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 8px;
-}
+} 
+*/
 
 section {
   margin-bottom: 40px;
