@@ -39,7 +39,7 @@ main {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 8px;
 }
 
@@ -51,5 +51,5 @@ footer {
   margin-top: auto;
   text-align: center;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
 }
