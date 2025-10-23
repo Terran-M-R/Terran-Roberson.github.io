@@ -59,6 +59,15 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   color: #ffffff;
+  transition: font-weight 0.2s;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+av a.active {
+  font-weight: 700;
 }
 
 /* I have temporairly turned this into a comment so its not on the main page, you can get rid of the comment by deleting the "/*"
