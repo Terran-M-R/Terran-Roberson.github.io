@@ -78,8 +78,8 @@ nav a {
 
 .social-links a {
   padding: 12px 24px;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #333;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
@@ -88,7 +88,8 @@ nav a {
 
 .social-links a:hover {
   transform: translateY(-3px);
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
 }
 
 section {
