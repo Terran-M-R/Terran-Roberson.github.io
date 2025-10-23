@@ -22,6 +22,27 @@ body {
   color: #ffffff;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  color: white; /* Adjust based on your background */
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Makes text readable */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 header {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
