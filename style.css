@@ -34,13 +34,13 @@ body {
 
 .hero h1 {
   font-size: 4rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Makes text readable */
 }
 
 .hero p {
   font-size: 1.5rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 header {
