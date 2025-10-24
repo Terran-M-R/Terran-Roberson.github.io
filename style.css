@@ -54,14 +54,17 @@ body {
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  color: white; /* Adjust based on your background */
+  color: white; 
 }
 
 .websitetitle h1 {
   font-size: 4rem;
   margin-bottom: 5px;
   transform: translateX(300px);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Makes text readable */
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+  text-shadow: 0 0 20px #fff,
+               0 0 30px #fff,
+               0 0 40px #fff;
 }
 
 .websitetitle p {
