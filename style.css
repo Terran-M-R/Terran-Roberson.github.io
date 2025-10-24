@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* This is the settings for the homepage body, NOT the body for the rest of the HTML. I did this so the background of the hompeage is different from the 
+rest of the website */
 html, homepagebody {
   height: 100%;
   margin: 0;
@@ -21,6 +23,9 @@ homepagebody {
   background-attachment: fixed;
   color: #ffffff;
 }
+
+/* These are the settings for the background of the other HTMLs, not the homepage. If I want a background for the rest of the pages, I need to add
+background-image: url(''); */
 
 html, body {
   height: 100%;
