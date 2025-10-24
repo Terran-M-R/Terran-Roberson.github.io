@@ -62,10 +62,10 @@ body {
   margin-bottom: 5px;
   transform: translateX(300px);
   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
-  text-shadow: 0 0 5px #fff,
-               0 0 10px #fff,
-               0 0 15px #fff,
-               0 0 10px #fff;
+  text-shadow: 0 0 1px #fff,
+               0 0 2px #fff,
+               0 0 3px #fff,
+               0 0 2px #fff;
 }
 
 .websitetitle p {
