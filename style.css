@@ -169,7 +169,7 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
   display: flex;
   max-width: 1200px;
   width: 100%;
-  gap: 50px; /* Space between left and right */
+  gap: 80px; /* Space between left and right */
   align-items: center;
 }
 
@@ -186,7 +186,7 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
 
 .about-right {
   flex: 1;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.0);
   padding: 30px;
   border-radius: 8px;
 }
