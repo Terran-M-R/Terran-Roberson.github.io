@@ -71,6 +71,7 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
+/*
 .abouttitle {
   display: flex;
   flex-direction: column;
@@ -88,6 +89,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   
 }
+*/
 
 /* These are the general settings for the header. The position allows it to remain at the top while one scrolls down each page */
 header {
