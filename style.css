@@ -71,6 +71,24 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
+.abouttitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  color: white; 
+}
+
+.abouttitle h1 {
+  font-size: 4rem;
+  margin-bottom: 5px;
+  transform: translateX(-200px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  
+}
+
 /* These are the general settings for the header. The position allows it to remain at the top while one scrolls down each page */
 header {
   position: sticky;
