@@ -152,7 +152,7 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
 .social-links a:hover {
   transform: translateY(-3px);
   background-color: rgba(0, 0, 0, 0.9);
-  color: #ffffff;
+  color: #90e0ef;
 }
 
 /* This section is the space between the rest of the page and the footer */
