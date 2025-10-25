@@ -157,6 +157,45 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
   color: #90e0ef;
 }
 
+.about-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px; /* Space between left and right */
+  align-items: center;
+}
+
+.about-left {
+  flex: 1;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.about-left h2 {
+  font-size: 3rem;
+  /* Add any styling from your hero that you want */
+}
+
+.about-right {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.about-right p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
 /* This section is the space between the rest of the page and the footer */
 
 section {
