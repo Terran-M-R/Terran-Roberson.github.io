@@ -71,26 +71,6 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-/*
-.abouttitle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
-  color: white; 
-}
-
-.abouttitle h1 {
-  font-size: 4rem;
-  margin-bottom: 5px;
-  transform: translateX(-200px);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  
-}
-*/
-
 /* These are the general settings for the header. The position allows it to remain at the top while one scrolls down each page */
 header {
   position: sticky;
@@ -115,20 +95,9 @@ nav a:hover {
   font-weight: bold;
 }
 
-av a.active {
+nav a.active {
   font-weight: 700;
 }
-
-/* I have temporairly turned this into a comment so its not on the main page, you can get rid of the comment by deleting the "/*"
-  main {
-  flex: 1;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-} 
-*/
 
 /* The social links are underneath the website title. They are worded buttons to different social media platforms. When someone hovers over the links
 the buttons move down 3 pixels and darken to let userers know they are clicking them. There is also a transition, it gets visibly darker as you hover*/
@@ -157,6 +126,8 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
   color: #90e0ef;
 }
 
+/* ===== ABOUT PAGE STYLES ===== */
+
 .about-section {
   min-height: 100vh;
   display: flex;
@@ -169,7 +140,7 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
   display: flex;
   max-width: 1200px;
   width: 100%;
-  gap: 80px; /* Space between left and right */
+  gap: 80px;
   align-items: center;
 }
 
@@ -181,7 +152,7 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
 
 .about-left h2 {
   font-size: 3rem;
-  /* Add any styling from your hero that you want */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .about-right {
@@ -192,8 +163,209 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
 }
 
 .about-right p {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   line-height: 1.6;
+}
+
+.about-right h3 {
+  color: #90e0ef;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+/* Skills Grid Styling */
+.skills-section {
+  margin-top: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.skill-item {
+  background-color: rgba(144, 224, 239, 0.15);
+  padding: 12px 16px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid rgba(144, 224, 239, 0.3);
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  background-color: rgba(144, 224, 239, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Info Sections (Certifications, Awards, Community Service) */
+.info-section {
+  margin-top: 30px;
+}
+
+.info-list {
+  margin-top: 10px;
+  margin-left: 20px;
+  line-height: 1.8;
+}
+
+.info-list li {
+  margin-bottom: 8px;
+}
+
+/* ===== PROJECTS PAGE STYLES ===== */
+
+.projects-section {
+  min-height: 100vh;
+  padding: 100px 40px 60px 40px;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #90e0ef;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(144, 224, 239, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(144, 224, 239, 0.2);
+  border-color: rgba(144, 224, 239, 0.6);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-header h3 {
+  color: #90e0ef;
+  font-size: 1.4rem;
+  margin: 0;
+  flex: 1;
+}
+
+.project-date {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.project-description {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-tag {
+  background-color: rgba(144, 224, 239, 0.2);
+  color: #90e0ef;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(144, 224, 239, 0.3);
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: rgba(144, 224, 239, 0.2);
+  border-radius: 6px;
+  border: 1px solid rgba(144, 224, 239, 0.4);
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.project-link:hover {
+  background-color: rgba(144, 224, 239, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .about-left {
+    text-align: center;
+    padding-right: 0;
+  }
+  
+  .about-left h2 {
+    font-size: 2.5rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+  }
+  
+  .websitetitle h1 {
+    transform: translateX(0);
+    font-size: 3rem;
+  }
+  
+  .websitetitle p {
+    transform: translateX(0);
+  }
+  
+  .social-links {
+    transform: translateX(0);
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* This section is the space between the rest of the page and the footer */
