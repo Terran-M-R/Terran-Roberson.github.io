@@ -38,11 +38,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Verdana, sans-serif;
-  /*background-image: url('https://github.com/Terran-M-R/Terran-Roberson.github.io/blob/main/Portfolio%20Background%20w%20Gradient.jpg?raw=true');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
+  background-color: #0a0a0a;
   color: #ffffff;
 }
 
@@ -126,50 +122,42 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
   color: #90e0ef;
 }
 
-/* ===== ABOUT PAGE STYLES ===== */
+/* ===== NEW ABOUT PAGE STYLES ===== */
 
-.about-section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-}
-
-.about-container {
-  display: flex;
-  max-width: 1200px;
+.about-section-new {
+  padding: 120px 40px 60px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
   width: 100%;
-  gap: 80px;
-  align-items: center;
 }
 
-.about-left {
-  flex: 1;
-  text-align: right;
-  padding-right: 50px;
+.about-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(144, 224, 239, 0.2);
 }
 
-.about-left h2 {
+.about-title {
   font-size: 3rem;
+  color: #90e0ef;
+  margin-bottom: 30px;
+  text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.about-right {
-  flex: 1;
-  background-color: rgba(0, 0, 0, 0.0);
-  padding: 30px;
-  border-radius: 8px;
+.about-bio {
+  margin-bottom: 40px;
 }
 
-.about-right p {
-  margin-bottom: 25px;
-  line-height: 1.6;
+.about-bio p {
+  line-height: 1.8;
+  font-size: 1.05rem;
 }
 
-.about-right h3 {
+.about-content h3 {
   color: #90e0ef;
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: 15px;
   font-size: 1.5rem;
 }
@@ -218,8 +206,8 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
 /* ===== PROJECTS PAGE STYLES ===== */
 
 .projects-section {
-  min-height: 100vh;
-  padding: 100px 40px 60px 40px;
+  padding: 100px 40px 80px 40px;
+  min-height: calc(100vh - 80px);
 }
 
 .projects-container {
@@ -239,7 +227,7 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .project-card {
@@ -326,17 +314,15 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
 /* ===== RESPONSIVE DESIGN ===== */
 
 @media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    gap: 40px;
+  .about-section-new {
+    padding: 100px 20px 40px 20px;
   }
   
-  .about-left {
-    text-align: center;
-    padding-right: 0;
+  .about-content {
+    padding: 25px;
   }
   
-  .about-left h2 {
+  .about-title {
     font-size: 2.5rem;
   }
   
@@ -344,8 +330,13 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
   
+  .projects-section {
+    padding: 100px 20px 60px 20px;
+  }
+  
   .projects-grid {
     grid-template-columns: 1fr;
+    margin-bottom: 40px;
   }
   
   .projects-title {
@@ -371,12 +362,12 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
 /* This section is the space between the rest of the page and the footer */
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 footer {
   margin-top: auto;
   text-align: center;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
