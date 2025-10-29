@@ -124,6 +124,130 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
   color: #90e0ef;
 }
 
+
+/* ===== TWO-COLUMN ABOUT PAGE STYLES ===== */
+
+.about-two-column {
+  min-height: 100vh;
+  padding: 100px 40px 60px 40px;
+}
+
+.about-two-column-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Left Side - Photo */
+.about-photo-side {
+  position: sticky;
+  top: 120px;
+  text-align: center;
+}
+
+.about-photo-wrapper {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  border: 3px solid rgba(144, 224, 239, 0.5);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(144, 224, 239, 0.3);
+}
+
+.about-name {
+  font-size: 2.2rem;
+  color: #90e0ef;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-tagline {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+}
+
+/* Right Side - Content */
+.about-content-side {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-section-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(144, 224, 239, 0.3);
+  transition: border-color 0.3s ease;
+}
+
+.about-section-box:hover {
+  border-color: rgba(144, 224, 239, 0.6);
+}
+
+.about-section-box h2 {
+  color: #90e0ef;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.about-section-box h3 {
+  color: #90e0ef;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.about-section-box p {
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive for Two-Column */
+@media (max-width: 1024px) {
+  .about-two-column-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .about-photo-side {
+    position: relative;
+    top: 0;
+  }
+  
+  .about-photo {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-two-column {
+    padding: 100px 20px 40px 20px;
+  }
+  
+  .about-name {
+    font-size: 1.8rem;
+  }
+  
+  .about-photo {
+    max-width: 250px;
+  }
+}
+
+
 /* ===== NEW ABOUT PAGE STYLES ===== */
 
 .about-section-new {
