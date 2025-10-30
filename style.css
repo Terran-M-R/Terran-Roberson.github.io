@@ -219,6 +219,35 @@ header {
   color: #90e0ef;
 } */ 
 
+/* ===== LET'S CONNECT BUTTON ===== */
+
+.connect-button-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.connect-button {
+  padding: 15px 40px;
+  background-color: rgba(144, 224, 239, 0.2);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: 2px solid rgba(144, 224, 239, 0.5);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.connect-button:hover {
+  transform: translateY(-5px) scale(1.05);
+  background-color: rgba(144, 224, 239, 0.3);
+  color: #90e0ef;
+  border-color: #90e0ef;
+  box-shadow: 0 8px 20px rgba(144, 224, 239, 0.4);
+}
+
 /* ===== FUN FACTS SECTION ===== */
 
 .fun-facts-section {
