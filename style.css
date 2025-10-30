@@ -106,11 +106,11 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateX(400px) translateY(30px);
+    transform: translateX(300px) translateY(30px);
   }
   to {
     opacity: 1;
-    transform: translateX(400px) translateY(0);
+    transform: translateX(300px) translateY(0);
   }
 }
 
@@ -141,6 +141,7 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
   gap: 8px;
   backdrop-filter: blur(5px);
   border: 2px solid transparent;
+  transform: translateX(300px);
 }
 
 .social-icon {
