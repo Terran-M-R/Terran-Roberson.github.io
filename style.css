@@ -43,6 +43,16 @@ body {
     repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(144, 224, 239, 0.03) 35px, rgba(144, 224, 239, 0.03) 70px);
   color: #ffffff;
   overflow-x: hidden;
+  animation: pageFadeIn 0.4s ease-in;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* This Section makes the website title and social media links in the middle of the page and offset 300 pixels */
