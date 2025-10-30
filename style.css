@@ -147,6 +147,7 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
 .social-icon {
   font-size: 1.2rem;
   transition: transform 0.3s ease;
+  transform: translateX(300px);
 }
 
 .social-links a:hover {
