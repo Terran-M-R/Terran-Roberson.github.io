@@ -106,11 +106,11 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateX(400px) translateY(30px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(400px) translateY(0);
   }
 }
 
