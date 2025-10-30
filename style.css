@@ -51,7 +51,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
+  min-height: 55vh;
   text-align: center;
   color: white; 
 }
@@ -229,13 +229,13 @@ header {
 
 .connect-button {
   padding: 15px 40px;
-  background-color: rgba(144, 224, 239, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
   font-size: 1.1rem;
-  border: 2px solid rgba(144, 224, 239, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   transition: all 0.3s ease;
   backdrop-filter: blur(5px);
 }
