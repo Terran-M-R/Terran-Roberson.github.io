@@ -56,9 +56,50 @@
 </div>
   </section>
 
-
   <footer>
     <p>&copy; 2025 TERRAN ROBERSON</p>
   </footer>
+
+  <script>
+  // Fun Facts Carousel
+  const cards = document.querySelectorAll('.fun-fact-card');
+  const dots = document.querySelectorAll('.dot');
+  let currentIndex = 0;
+  
+  function showCard(index) {
+    // Remove active class from all cards and dots
+    cards.forEach(card => {
+      card.classList.remove('active', 'exit-left');
+    });
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Add exit animation to current card
+    if (cards[currentIndex]) {
+      cards[currentIndex].classList.add('exit-left');
+    }
+    
+    // Update index
+    currentIndex = index;
+    
+    // Show new card and activate dot
+    cards[currentIndex].classList.add('active');
+    dots[currentIndex].classList.add('active');
+  }
+  
+  function nextCard() {
+    const nextIndex = (currentIndex + 1) % cards.length;
+    showCard(nextIndex);
+  }
+  
+  // Auto-rotate every 4 seconds
+  setInterval(nextCard, 4000);
+  
+  // Allow manual clicking on dots
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      showCard(index);
+    });
+  });
+</script>
 </body>
 </html>
