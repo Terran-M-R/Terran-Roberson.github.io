@@ -141,7 +141,6 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
   gap: 8px;
   backdrop-filter: blur(5px);
   border: 2px solid transparent;
-  transform: translateX(300px);
 }
 
 .social-icon {
