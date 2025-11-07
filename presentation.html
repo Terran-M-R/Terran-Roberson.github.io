@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Readiness Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: Verdana, sans-serif;
+      background-color: #0a0a0a;
+      background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(144, 224, 239, 0.03) 35px, rgba(144, 224, 239, 0.03) 70px);
+      color: #ffffff;
+      overflow-x: hidden;
+      animation: pageFadeIn 0.4s ease-in;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    @keyframes pageFadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .viewer-container {
+      background: rgba(26, 26, 26, 0.95);
+      border-radius: 12px;
+      border: 2px solid rgba(144, 224, 239, 0.2);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      max-width: 1000px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+      border-bottom: 2px solid #90e0ef;
+      color: white;
+      padding: 20px 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+      color: #90e0ef;
+    }
+
+    .slide-counter {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      color: #ffffff;
+    }
+
+    .slide-container {
+      position: relative;
+      background: #0a0a0a;
+      padding: 20px;
+    }
+
+    .slide-wrapper {
+      position: relative;
+      width: 100%;
+      max-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a1a1a;
+      border-radius: 8px;
+      border: 1px solid rgba(144, 224, 239, 0.2);
+      overflow: hidden;
+    }
+
+    .slide {
+      display: none;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .slide.active {
+      display: block;
+      animation: fadeIn 0.3s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background: rgba(26, 26, 26, 0.95);
+      border-top: 1px solid rgba(144, 224, 239, 0.2);
+    }
+
+    .nav-button {
+      background: #90e0ef;
+      color: #0a0a0a;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+      font-weight: 700;
+    }
+
+    .nav-button:hover:not(:disabled) {
+      background: #a8e6f5;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(144, 224, 239, 0.4);
+    }
+
+    .nav-button:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    .nav-button:disabled {
+      background: #333;
+      color: #666;
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    .progress-bar {
+      flex: 1;
+      margin: 0 20px;
+      height: 8px;
+      background: #1a1a1a;
+      border: 1px solid rgba(144, 224, 239, 0.2);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: #90e0ef;
+      transition: width 0.3s ease;
+      border-radius: 4px;
+    }
+
+    .keyboard-hint {
+      text-align: center;
+      padding: 15px;
+      color: #90e0ef;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 1.4rem;
+      }
+
+      .nav-button {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+      }
+
+      .progress-bar {
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="viewer-container">
+    <div class="header">
+      <h1>Career Readiness Portfolio</h1>
+      <div class="slide-counter">
+        Slide <span id="current-slide">1</span> of <span id="total-slides">16</span>
+      </div>
+    </div>
+
+    <div class="slide-container">
+      <div class="slide-wrapper">
+        <img src="images/Career Readiness Portfolio.jpg" alt="Slide 1" class="slide active">
+        <img src="images/Career Readiness Portfolio (1).jpg" alt="Slide 2" class="slide">
+        <img src="images/Career Readiness Portfolio (2).jpg" alt="Slide 3" class="slide">
+        <img src="images/Career Readiness Portfolio (3).jpg" alt="Slide 4" class="slide">
+        <img src="images/Career Readiness Portfolio (4).jpg" alt="Slide 5" class="slide">
+        <img src="images/Career Readiness Portfolio (5).jpg" alt="Slide 6" class="slide">
+        <img src="images/Career Readiness Portfolio (6).jpg" alt="Slide 7" class="slide">
+        <img src="images/Career Readiness Portfolio (7).jpg" alt="Slide 8" class="slide">
+        <img src="images/Career Readiness Portfolio (8).jpg" alt="Slide 9" class="slide">
+        <img src="images/Career Readiness Portfolio (9).jpg" alt="Slide 10" class="slide">
+        <img src="images/Career Readiness Portfolio (10).jpg" alt="Slide 11" class="slide">
+        <img src="images/Career Readiness Portfolio (11).jpg" alt="Slide 12" class="slide">
+        <img src="images/Career Readiness Portfolio (12).jpg" alt="Slide 13" class="slide">
+        <img src="images/Career Readiness Portfolio (13).jpg" alt="Slide 14" class="slide">
+        <img src="images/Career Readiness Portfolio (14).jpg" alt="Slide 15" class="slide">
+        <img src="images/Career Readiness Portfolio (15).jpg" alt="Slide 16" class="slide">
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="nav-button" id="prev-btn" disabled>← Previous</button>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress"></div>
+      </div>
+      <button class="nav-button" id="next-btn">Next →</button>
+    </div>
+  </div>
+
+  <div class="keyboard-hint">
+    💡 Tip: Use arrow keys (← →) to navigate
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const currentSlideSpan = document.getElementById('current-slide');
+    const progress = document.getElementById('progress');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+
+      currentSlideSpan.textContent = index + 1;
+      
+      const progressPercent = ((index + 1) / totalSlides) * 100;
+      progress.style.width = progressPercent + '%';
+
+      prevBtn.disabled = index === 0;
+      nextBtn.disabled = index === totalSlides - 1;
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        showSlide(currentSlide);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) {
+        currentSlide--;
+        showSlide(currentSlide);
+      }
+    }
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    showSlide(0);
+  </script>
+</body>
+</html>
