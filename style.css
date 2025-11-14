@@ -926,6 +926,128 @@ section {
   }
 }
 
+/* Presentation code */
+
+    .slide-counter {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      color: #ffffff;
+    }
+
+    .slide-container {
+      position: relative;
+      background: #0a0a0a;
+      padding: 20px;
+    }
+
+    .slide-wrapper {
+  position: relative;
+  width: 100%;
+  /* Remove max-height line */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid rgba(144, 224, 239, 0.2);
+  overflow: hidden;
+}
+
+    .slide {
+      display: none;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .slide.active {
+      display: block;
+      animation: fadeIn 0.3s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background: rgba(26, 26, 26, 0.95);
+      border-top: 1px solid rgba(144, 224, 239, 0.2);
+    }
+
+    .nav-button {
+      background: #90e0ef;
+      color: #0a0a0a;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+      font-weight: 700;
+    }
+
+    .nav-button:hover:not(:disabled) {
+      background: #a8e6f5;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(144, 224, 239, 0.4);
+    }
+
+    .nav-button:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    .nav-button:disabled {
+      background: #333;
+      color: #666;
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    .progress-bar {
+      flex: 1;
+      margin: 0 20px;
+      height: 8px;
+      background: #1a1a1a;
+      border: 1px solid rgba(144, 224, 239, 0.2);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: #90e0ef;
+      transition: width 0.3s ease;
+      border-radius: 4px;
+    }
+
+    .keyboard-hint {
+      text-align: center;
+      padding: 15px;
+      color: #90e0ef;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 1.4rem;
+      }
+
+      .nav-button {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+      }
+
+      .progress-bar {
+        margin: 0 10px;
+      }
+    }
+
 
 footer {
   margin-top: auto;
