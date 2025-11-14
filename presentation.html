@@ -5,6 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Career Readiness Portfolio</title>
   <style>
+    header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  z-index: 100;
+}
+
+/* The navigation is part of the header. It is the word links to the other pages. Hover changes the way it looks when a mouse is over it. Active shows when 
+a the user is currently on the page. Ex: One the hompeage, the Home link is in bold. On HTML, I need to put class = active on each that is actually active. */
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease, font-weight 0.2s;
+}
+
+nav a:hover {
+  font-weight: bold;
+  transform: translateY(-2px);
+}
+
+nav a.active {
+  font-weight: 700;
+}
+
+
+    
 
     .projects-title {
   font-size: 3rem;
