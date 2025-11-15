@@ -113,9 +113,9 @@ nav a.active {
 /* The social links are underneath the website title. They are worded buttons to different social media platforms. When someone hovers over the links
 the buttons move down 3 pixels and darken to let userers know they are clicking them. There is also a transition, it gets visibly darker as you hover*/
 
-/* ===== HOMEPAGE ANIMATIONS ===== */
+/* animations for page loading and more stuff on the index */
 
-/* Fade-in and slide-up animation */
+/* animation so the content of the pages move up into place as a page loads so it looks neat */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -140,7 +140,7 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
   animation-delay: 0.6s;
 }
 
-/* Enhanced social links with icons */
+/* social media links, same as other social media links icon, not active at the moment, might use in the future  */
 .social-links a {
   padding: 12px 24px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -175,7 +175,7 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
   transform: scale(1.2) rotate(5deg);
 }
 
-/* Pulse animation for name */
+/* animation so my name, the websitetitle, kind of pops out */
 .websitetitle h1 {
   animation: fadeInUp 1s ease-out forwards, subtlePulse 3s ease-in-out infinite 2s;
 }
@@ -189,7 +189,7 @@ the buttons move down 3 pixels and darken to let userers know they are clicking 
   }
 }
 
-/* Smooth entrance for header */
+/* animation for header to appear onscreen after a delay so it looks neat*/
 header {
   animation: fadeIn 0.8s ease-out;
 }
@@ -215,6 +215,8 @@ header {
   transform: translateX(300px);
 }
 
+/* Might use social links again, but since replaced it */
+
 /*.social-links a {
   padding: 12px 24px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -231,7 +233,7 @@ header {
   color: #90e0ef;
 } */ 
 
-/* ===== LET'S CONNECT BUTTON ===== */
+/* connect button on homepage/ same 3 buttons for links to social media on the connect page */
 
 .connect-button-container {
   margin-top: 30px;
@@ -260,7 +262,7 @@ header {
   box-shadow: 0 8px 20px rgba(144, 224, 239, 0.4);
 }
 
-/* ===== FUN FACTS SECTION ===== */
+/* fun facts section on the index page */
 
 .fun-facts-section {
   display: flex;
@@ -350,7 +352,7 @@ header {
   width: 12px;
   height: 12px;
 }
-/* ===== TWO-COLUMN ABOUT PAGE STYLES ===== */
+/* about page w/ two columns */
 
 .about-two-column {
   min-height: 100vh;
@@ -366,7 +368,7 @@ header {
   align-items: start;
 }
 
-/* Left Side - Photo */
+/* about page left side containing photo */
 .about-photo-side {
   position: sticky;
   top: 120px;
@@ -405,7 +407,7 @@ header {
   font-style: italic;
 }
 
-/* Right Side - Content */
+/* about page, right side that has all the content */
 .about-content-side {
   display: flex;
   flex-direction: column;
@@ -441,7 +443,7 @@ header {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* Responsive for Two-Column */
+/* making about page two columns with photo and text on diff sides unlike previous version */
 @media (max-width: 1024px) {
   .about-two-column-container {
     grid-template-columns: 1fr;
@@ -473,7 +475,7 @@ header {
 }
 
 
-/* ===== NEW ABOUT PAGE STYLES ===== */
+/* About page*/
 
 .about-section-new {
   padding: 120px 40px 60px 40px;
@@ -513,7 +515,7 @@ header {
   font-size: 1.5rem;
 }
 
-/* Skills Grid Styling */
+/* Skills Grid */
 .skills-section {
   margin-top: 30px;
 }
@@ -531,13 +533,8 @@ header {
   border-radius: 6px;
   text-align: center;
   border: 1px solid rgba(144, 224, 239, 0.3);
-  transition: all 0.3s ease;
 }
 
-.skill-item:hover {
-  background-color: rgba(144, 224, 239, 0.3);
-  transform: translateY(-2px);
-}
 
 /* Info Sections (Certifications, Awards, Community Service) */
 .info-section {
@@ -554,7 +551,7 @@ header {
   margin-bottom: 8px;
 }
 
-/* ===== PROJECTS PAGE STYLES ===== */
+/* Projects */
 
 .projects-section {
   padding: 100px 40px 80px 40px;
@@ -598,7 +595,7 @@ header {
   border-color: rgba(144, 224, 239, 0.6);
 }
 
-/* Project Media Styles */
+/* Projects */
 .project-media-container {
   position: relative;
   width: 100%;
@@ -716,7 +713,7 @@ header {
   transform: translateY(-2px);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* xtra designs and stuff, moves some content up when page loads, padding  */
 
 @media (max-width: 768px) {
   .about-section-new {
@@ -770,7 +767,7 @@ section {
   margin-bottom: 0;
 }
 
-/* ===== ORGANIZATIONS PAGE STYLES ===== */
+/* Organizations */
 
 .organizations-section {
   padding: 100px 40px 80px 40px;
