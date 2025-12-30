@@ -34,6 +34,6 @@ If you find a bug or see room for improvement on my website, please reach out to
 ## Want to follow my journey?
 
 If you would like to see more of my projects or would like to observe my progress on becoming an MIS professional, 
-feel free to connect with my on LinkedIn - https://www.linkedin.com/in/terran-roberson
+feel free to connect with me on LinkedIn - https://www.linkedin.com/in/terran-roberson
 
 
