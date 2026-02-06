@@ -1020,6 +1020,131 @@ section {
   }
 }
 
+/* Mobile Responsiveness for Index Page */
+@media (max-width: 768px) {
+  /* Reset the offset for mobile */
+  .websitetitle {
+    min-height: 70vh;
+    padding: 20px;
+  }
+
+  .websitetitle h1 {
+    font-size: 2.5rem;
+    transform: translateX(0) !important;
+    text-align: center;
+  }
+
+  .websitetitle p {
+    font-size: 1.1rem;
+    transform: translateX(0) !important;
+    text-align: center;
+  }
+
+  /* Fix social links positioning */
+  .social-links {
+    transform: translateX(0) !important;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .social-links a {
+    transform: translateX(0) !important;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .social-links a:hover {
+    transform: translateY(-3px) scale(1.02) !important;
+  }
+
+  .social-icon {
+    transform: translateX(0) !important;
+  }
+
+  /* Fix connect button */
+  .connect-button-container {
+    margin-top: 25px;
+  }
+
+  .connect-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  /* Fix animations to not use horizontal offset on mobile */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Fun facts section mobile */
+  .fun-facts-section {
+    padding: 20px 15px 40px 15px;
+    min-height: auto;
+  }
+
+  .fun-facts-container {
+    width: 95%;
+  }
+
+  .fun-facts-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .fun-fact-card {
+    padding: 20px 20px;
+  }
+
+  .fun-fact-card p {
+    font-size: 1rem;
+  }
+
+  .fun-facts-carousel {
+    height: 180px;
+  }
+
+  /* Header mobile adjustments */
+  header {
+    padding: 15px 10px;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .websitetitle h1 {
+    font-size: 2rem;
+  }
+
+  .websitetitle p {
+    font-size: 0.95rem;
+  }
+
+  nav a {
+    margin: 0 5px;
+    font-size: 0.85rem;
+  }
+
+  .fun-fact-card {
+    padding: 15px;
+  }
+
+  .fun-fact-card p {
+    font-size: 0.95rem;
+  }
+}
+
 
 
 
